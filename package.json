@@ -1,0 +1,23 @@
+{
+  "name": "eyeofhorus",
+  "version": "0.0.5",
+  "description": "demo about baidu face api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sky-admin@github.com/sky-admin/EyeOfHorus.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sky-admin/EyeOfHorus/issues"
+  },
+  "homepage": "https://github.com/sky-admin/EyeOfHorus#readme",
+  "dependencies": {
+    "baidu-aip-sdk": "^2.1.0",
+    "express": "^4.16.2"
+  }
+}
