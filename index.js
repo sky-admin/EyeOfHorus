@@ -6,7 +6,7 @@ const config = require('./config')
 
 // 设置APPID/AK/SK
 const APP_ID = config.appId
-const API_KEY = config.appKey
+const API_KEY = config.apiKey
 const SECRET_KEY = config.secretKey
 
 if (!(APP_ID && API_KEY && SECRET_KEY)) {
