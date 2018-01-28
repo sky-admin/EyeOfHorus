@@ -18,6 +18,9 @@
   "homepage": "https://github.com/sky-admin/EyeOfHorus#readme",
   "dependencies": {
     "baidu-aip-sdk": "^2.1.0",
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "multer": "^1.3.0",
+    "pug": "^2.0.0-rc.4"
   }
 }
