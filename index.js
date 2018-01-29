@@ -6,7 +6,7 @@ const upload = multer() // for parsing multipart/form-data
 const AipFaceClient = require('baidu-aip-sdk').face
 
 app.set('view engine', 'pug')
-app.use(bodyParser.json()) // for parsing application/json
+app.use(bodyParser.json({limit: '4mb'})) // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true}))
 
 // 设置APPID/AK/SK
