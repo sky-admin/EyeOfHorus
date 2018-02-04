@@ -29,6 +29,28 @@ $(function () {
 
   $('#reg').on('click', () => {
     const image = $('#show').attr('src')
+    const name = $('#name').val()
+    if (validate(image, name))
+      $.ajax('reg', {
+        method: 'post',
+        data: {image, name},
+        success (res) {
+          let resultText = '遇到一些问题'
+          if (res.errno === 0) {
+            resultText = '注册成功'
+          }
+          $('#result').html(resultText)
+        }
+      })
+    else
+      alert('信息遗漏')
   })
 
 })
+
+function validate (...params) {
+  for (var i in params) {
+    if (params[i] === undefined || params[i].length === 0) return false
+  }
+  return true
+}

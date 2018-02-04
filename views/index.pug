@@ -1,12 +1,17 @@
 html
     head
         title= 'EyeOfHorus'
-        link(href= 'https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css')
+        link(href='https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css')
+        link(href='./style/index.css', rel= 'stylesheet')
     body
         h1= '百度人脸识别API调用demo'
-        input#image(type= 'file')
-        img#show
         div
+            input#image(type= 'file')
+        img#show
+        div.action
+            div.reg-form
+                label(for= 'name')= '姓名'
+                input#name(type= 'text')
             button#identify= '识别'
             button#reg= '注册新的人脸'
         div
@@ -15,4 +20,4 @@ html
 
         script(src= 'https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js')
         script(src= 'https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js')
-        script(src= './main.js')
+        script(src= '/js/main.js')

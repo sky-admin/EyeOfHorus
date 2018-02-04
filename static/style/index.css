@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+#show {
+    margin-top: 20px;
+    max-width: 800px;
+    height: 400px;
+}
+
+.action {
+    margin-top: 20px;
+}
+
+.action button {
+    margin: 10px;
+}
+
+.reg-form {
+    margin: 10px 0;
+}
